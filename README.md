@@ -1,6 +1,8 @@
 # SpaceDefense
 A game made on Processing with Java. The user can maneuver her/his spaceship to shoot at the falling asteroids and health items. 
 
+https://user-images.githubusercontent.com/24204239/220319495-f66ffd1d-aeba-44de-94d1-ff14c8480c54.mp4
+
 I initially made the game without the Arduino part and included the use of the keyboard to make the development more convenient and seamless. This is because it seemed rather easier for me to replace the keyboard use with the button use through serial communication than leaving numerous chunks blank. I still commented out not all but most of the parts necessary to run the keyboard to play the game. So find parts as shown below and simply uncomment them to use the keyboard instead! (apart from the uncommenting you need to do some tweaking into the code of course)
 
 In terms of the code in Processing, I have in total of 4 classes (Player, Laser, Item, and Asteroid). I used polygons instead of images on asteroids for three reasons. First, I resized the images in Processing and that made the whole game slow. After talking with Aaron, I realized I could have cropped or resized images outside of Processing. However, there was another reason I preferred not to use an image for an asteroid. I thought it would be awkward to recreate the specific movement effect on an image, and the way my code generated different shapes, sizes, trajectories made the game more resourceful. Lastly, employing shapes instead of simply importing images seemed like a bigger challenge to me so I went with it. This is because these polygons have different shapes and vertices and so the collision effect on them required more thinking and effort than on uniform images.
